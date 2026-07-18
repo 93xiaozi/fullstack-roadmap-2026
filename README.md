@@ -219,3 +219,256 @@ Day3：JavaScript基础入门
 让网页从“静态页面”变成“可以操作的页面”。
 ```
 
+日期：2026年7月18日
+
+学习内容：
+
+1. HTML表单基础
+
+- 学习form标签
+  - 理解form用于收集用户输入信息
+  - 了解表单是登录、注册等页面的基础结构
+
+- 学习input标签
+  - text：普通文本输入
+  - password：密码输入
+  - email：邮箱输入
+  - radio：单选按钮
+  - checkbox：多选按钮
+  - button：按钮
+
+- 学习label标签
+  - 理解label用于描述输入框
+  - 掌握for属性与input的id进行关联
+
+- 学习textarea标签
+  - 用于输入多行文本
+  - 适用于个人简介、留言等内容
+
+- 学习select和option
+  - 制作下拉选择框
+  - 理解option作为选择项
+
+2. HTML表单结构设计
+
+- 学习如何组织注册页面结构
+- 理解HTML标签嵌套规则
+- 了解页面结构应该保持清晰
+
+3. Flex布局复习
+
+- 复习display:flex
+- 理解默认flex-direction为row
+- 学习使用flex-direction:column让表单内容垂直排列
+- 复习justify-content和align-items的作用
+
+
+完成项目：
+
+项目名称：
+
+注册页面 HTML版
+
+
+完成内容：
+
+- 使用form创建注册表单
+- 创建用户名输入框
+- 创建密码输入框
+- 添加性别选择
+- 添加兴趣选择
+- 添加个人介绍输入区域
+- 添加注册按钮
+- 添加兴趣下拉选择
+
+
+项目中使用到：
+
+HTML标签：
+
+- form
+- label
+- input
+- textarea
+- select
+- option
+- button
+
+
+CSS知识：
+
+- display:flex
+- flex-direction
+
+
+遇到问题：
+
+1. HTML标签关闭顺序错误
+
+问题：
+
+form和div嵌套时：
+
+先打开的标签没有最后关闭，导致结构混乱。
+
+
+2. 不理解radio和checkbox区别
+
+问题：
+
+一开始使用checkbox制作性别选择。
+
+原因：
+
+不知道checkbox用于多选，而radio用于单选。
+
+
+3. id重复问题
+
+问题：
+
+男女两个选项使用了相同id：
+
+gender
+
+导致页面中id不唯一。
+
+
+4. 个人介绍使用input
+
+问题：
+
+使用input制作个人简介。
+
+原因：
+
+不了解input只能输入单行文本。
+
+
+5. Flex布局方向理解不足
+
+问题：
+
+使用：
+
+justify-content:center
+
+后发现表单元素全部横向排列。
+
+
+原因：
+
+没有理解Flex默认主轴方向为水平。
+
+
+解决方案：
+
+1. 学习HTML标签嵌套规则：
+
+原则：
+
+后打开的标签先关闭。
+
+
+正确：
+
+<div>
+
+<form>
+
+</form>
+
+</div>
+
+
+2. 理解表单控件区别：
+
+radio：
+
+用于互斥选择，只能选择一个。
+
+
+checkbox：
+
+用于多选，可以选择多个。
+
+
+3. 保证id唯一：
+
+修改重复id：
+
+gender
+
+为不同元素使用不同id。
+
+
+4. 使用正确标签：
+
+单行输入：
+
+input
+
+
+多行输入：
+
+textarea
+
+
+5. 理解Flex方向：
+
+默认：
+
+flex-direction:row
+
+元素横向排列。
+
+
+表单布局需要：
+
+flex-direction:column
+
+让元素上下排列。
+
+
+明天计划：
+
+Day5：HTML综合项目 + HTML知识整理
+
+
+学习内容：
+
+1. 复习HTML完整知识体系
+
+- 基础结构
+- 文本标签
+- 图片
+- 链接
+- 列表
+- 表单
+- 语义化标签
+
+
+2. 学习如何组合多个HTML模块
+
+
+项目：
+
+个人博客主页 HTML版
+
+
+要求包含：
+
+- header
+- nav
+- main
+- section
+- footer
+- 图片
+- 文章列表
+- 技能列表
+- 联系表单
+
+
+目标：
+
+能够独立使用HTML搭建完整网页结构，为后续CSS美化和JavaScript交互打基础。
